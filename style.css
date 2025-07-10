@@ -1,0 +1,217 @@
+@font-face {
+    font-family: leagueSpartan;
+    src: url(fonts/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: regularGlacialIndifference;
+    src: url(fonts/GlacialIndifference-Regular.otf);
+}
+
+@font-face {
+    font-family: boldGlacialIndifference;
+    src: url(fonts/GlacialIndifference-Bold.otf);
+}
+
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: leagueSpartan;
+}
+
+#hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#hero .bg-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+#bg1 {
+    z-index: 0;
+}
+
+#bg2 {
+    z-index: 0;
+}
+
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#hero nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#hero nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5%;
+    margin: 0;
+    padding: 0;
+}
+
+#hero nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: white;
+}
+
+#hero .hero-content .logo {
+    width: 100%;
+    height: auto;
+}
+
+#hero .hero-navigation {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: white;
+
+}
+
+#hero .hero-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 2vw;
+}
+
+#hero .hero-navigation li {
+    position: relative;
+    padding: 0 15px;
+}
+
+#hero .hero-navigation li::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+#hero .hero-navigation li:last-child::after {
+    content: none;
+}
+
+#hero .hero-navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#hero .hero-navigation a:hover {
+    color: #F1B000;
+}
+
+#hero .hero-navigation a.active {
+    color: #F5D709;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 1.5%;
+    background-color: #7A7A7A;
+    color: white;
+    border-top: 1px solid black;
+}
+
+.footer p {
+    padding-right: 10%;
+}
+
+.footer img {
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+.footer img:last-child {
+    border-right: none;
+}
+
+
+.footer .smallimg {
+    width: 10%;
+    height: auto;
+}
+
+.footer .bigimg {
+    width: 5%;
+    height: auto;
+}
+
+
+main {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: regularGlacialIndifference;
+}
+
+main h1,
+h2,
+h3 {
+    font-family: leagueSpartan;
+}
+
+
+section {
+    margin-bottom: 60px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009C3B;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #9BC53D;
+}
