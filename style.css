@@ -49,6 +49,10 @@ html {
     z-index: 0;
 }
 
+.extra-content {
+    border-top: 1px solid #7A7A7A;
+}
+
 #hero .overlay {
     position: absolute;
     top: 0;
@@ -149,12 +153,36 @@ html {
     color: #F5D709;
 }
 
+.organizers-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.organizers-logos img {
+    width: 30%;
+    height: auto;
+    border-right: 1px solid black;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.organizers-logos img:first-child {
+    padding-left: 0px;
+}
+
+.organizers-logos img:last-child {
+    border-right: 0px;
+    padding-right: 0px;
+}
+
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 1.5%;
+    padding: 1%;
     background-color: #7A7A7A;
     color: white;
     border-top: 1px solid black;
