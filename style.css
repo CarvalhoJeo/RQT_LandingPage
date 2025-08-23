@@ -279,13 +279,13 @@ html {
 main {
     padding: 40px 20px;
     max-width: 900px;
-    margin: 0 auto;
     font-family: regularGlacialIndifference;
 }
 
 main h1,
 h2,
 h3 {
+    text-align: center;
     font-family: leagueSpartan;
 }
 
@@ -293,6 +293,8 @@ h3 {
 section {
     margin-bottom: 60px;
 }
+
+
 
 .btn {
     display: inline-block;
@@ -307,12 +309,21 @@ section {
     background-color: #9BC53D;
 }
 
-/* Decorative corner and side images */
-
 main {
     position: relative;
-    background: #fff;
-    overflow: visible;
+    margin: 0% 0;
+    padding: 0% 0;
+    max-width: none;
+}
+
+.content {
+    box-sizing: border-box;
+    width: min(900px, 100%);
+    margin-inline: auto;
+    padding-inline: 20px;
+    position: relative;
+    background-color: white;
+    z-index: 0;
 }
 
 .page-decorations {
@@ -336,45 +347,51 @@ main {
 }
 
 .corner-decoration.top-left {
-    top: -82px;
-    left: -82px;
+    top: -20px;
+    left: 0%;
+    rotate: 180deg;
     background-position: left top;
 }
 
 .corner-decoration.top-right {
-    top: -82px;
-    right: -82px;
+    top: -20px;
+    right: 0%;
+    rotate: 180deg;
     background-position: right top;
 }
 
 .corner-decoration.bottom-left {
-    bottom: -82px;
-    left: -82px;
+    bottom: 0%;
+    left: 0%;
+    rotate: 180deg;
     background-position: left bottom;
 }
 
 .corner-decoration.bottom-right {
-    bottom: -82px;
-    right: -82px;
+    bottom: 0%;
+    right: 0px;
+    rotate: 180deg;
     background-position: right bottom;
 }
 
-/* side accents */
 .side-decoration {
     width: 186px;
     height: 373px;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     background-image: url(images/corner5.png);
     background-size: 372px 373px;
 }
 
 .side-decoration.left {
-    left: -93px;
+    left: 0%;
+    top: 15%;
+    rotate: 180deg;
     background-position: left center;
 }
 
 .side-decoration.right {
-    right: -93px;
+    right: 0%;
+    rotate: 180deg;
     background-position: right center;
 }
