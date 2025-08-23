@@ -328,17 +328,17 @@ main {
     background-repeat: no-repeat;
 }
 
-/* corner accents */
 .corner-decoration {
-    width: 165px;
-    height: 165px;
+    width: 20%;
+    height: 10%;
     background-image: url(images/corner3.png);
     background-size: 329px 329px;
 }
 
 .corner-decoration.top-left {
     top: -82px;
-    left: -82px;
+    left: -28%;
+    transform: rotate(180deg);
     background-position: left top;
 }
 
