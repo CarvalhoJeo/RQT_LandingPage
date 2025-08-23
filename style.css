@@ -306,3 +306,78 @@ section {
 .btn:hover {
     background-color: #9BC53D;
 }
+
+/* Decorative corner and side images */
+.corner-decoration,
+.side-decoration {
+    position: fixed;
+    z-index: 3;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.corner-decoration {
+    width: 150px;
+    height: 150px;
+}
+
+.corner-decoration img {
+    width: 300px;
+    height: 300px;
+}
+
+.corner-decoration.top-left {
+    top: 0;
+    left: 0;
+}
+
+.corner-decoration.top-right {
+    top: 0;
+    right: 0;
+}
+
+.corner-decoration.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.corner-decoration.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+.corner-decoration.top-right img {
+    transform: translateX(-150px);
+}
+
+.corner-decoration.bottom-left img {
+    transform: translateY(-150px);
+}
+
+.corner-decoration.bottom-right img {
+    transform: translate(-150px, -150px);
+}
+
+.side-decoration {
+    top: 50%;
+    width: 150px;
+    height: 300px;
+    transform: translateY(-50%);
+}
+
+.side-decoration img {
+    width: 300px;
+    height: 300px;
+}
+
+.side-decoration.left {
+    left: 0;
+}
+
+.side-decoration.right {
+    right: 0;
+}
+
+.side-decoration.right img {
+    transform: translateX(-150px);
+}
