@@ -306,3 +306,76 @@ section {
 .btn:hover {
     background-color: #9BC53D;
 }
+
+/* Decorative corner and side images */
+
+main {
+    position: relative;
+    background: #fff;
+    overflow: visible;
+}
+
+.page-decorations {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.corner-decoration,
+.side-decoration {
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+/* corner accents */
+.corner-decoration {
+    width: 165px;
+    height: 165px;
+    background-image: url(images/corner3.png);
+    background-size: 329px 329px;
+}
+
+.corner-decoration.top-left {
+    top: -82px;
+    left: -82px;
+    background-position: left top;
+}
+
+.corner-decoration.top-right {
+    top: -82px;
+    right: -82px;
+    background-position: right top;
+}
+
+.corner-decoration.bottom-left {
+    bottom: -82px;
+    left: -82px;
+    background-position: left bottom;
+}
+
+.corner-decoration.bottom-right {
+    bottom: -82px;
+    right: -82px;
+    background-position: right bottom;
+}
+
+/* side accents */
+.side-decoration {
+    width: 186px;
+    height: 373px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(images/corner5.png);
+    background-size: 372px 373px;
+}
+
+.side-decoration.left {
+    left: -93px;
+    background-position: left center;
+}
+
+.side-decoration.right {
+    right: -93px;
+    background-position: right center;
+}
