@@ -319,7 +319,7 @@ main {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    z-index: 0;
+    z-index: -1;
 }
 
 .corner-decoration,
@@ -329,16 +329,15 @@ main {
 }
 
 .corner-decoration {
-    width: 20%;
-    height: 10%;
+    width: 165px;
+    height: 165px;
     background-image: url(images/corner3.png);
     background-size: 329px 329px;
 }
 
 .corner-decoration.top-left {
     top: -82px;
-    left: -28%;
-    transform: rotate(180deg);
+    left: -82px;
     background-position: left top;
 }
 
