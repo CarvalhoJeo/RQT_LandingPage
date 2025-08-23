@@ -308,10 +308,23 @@ section {
 }
 
 /* Decorative corner and side images */
+
+main {
+    position: relative;
+}
+
+.page-decorations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .corner-decoration,
 .side-decoration {
-    position: fixed;
-    z-index: 3;
+    position: absolute;
+    z-index: -1;
     pointer-events: none;
     overflow: hidden;
 }
