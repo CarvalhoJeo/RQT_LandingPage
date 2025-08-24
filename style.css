@@ -216,35 +216,32 @@ html {
     color: #F5D709;
 }
 
-.organizers-logos {
+.sponsors {
     display: flex;
+    align-items: stretch;
+    gap: 20px;
+    height: 60px;
+}
+
+.sponsor-logo {
+    height: 100%;
+    width: auto;
+}
+
+.sponsor-separator {
+    width: 1px;
+    background-color: black;
+}
+
+.organizers-logos {
     justify-content: center;
-    align-items: center;
     padding: 1%;
-}
-
-.organizers-logos img {
-    width: 30%;
-    height: auto;
-    border-right: 1px solid black;
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
-.organizers-logos img:first-child {
-    padding-left: 0px;
-}
-
-.organizers-logos img:last-child {
-    border-right: 0px;
-    padding-right: 0px;
+    height: 100px;
 }
 
 .footer {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
     padding: 1%;
     background-color: #3683b9;
     color: white;
@@ -252,27 +249,11 @@ html {
 }
 
 .footer p {
-    padding-right: 10%;
+    margin: 0;
 }
 
-.footer img {
-    border-right: 1px solid black;
-    padding-right: 10px;
-}
-
-.footer img:last-child {
-    border-right: none;
-}
-
-
-.footer .smallimg {
-    width: 10%;
-    height: auto;
-}
-
-.footer .bigimg {
-    width: 5%;
-    height: auto;
+.footer .sponsors {
+    margin-left: auto;
 }
 
 
