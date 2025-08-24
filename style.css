@@ -395,3 +395,14 @@ main {
     rotate: 180deg;
     background-position: right center;
 }
+
+/* Estilo para listas em seções de edições */
+.edicao ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.edicao li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
