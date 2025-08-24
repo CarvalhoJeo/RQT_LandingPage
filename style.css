@@ -236,6 +236,7 @@ html {
 .organizers-logos {
     justify-content: center;
     padding: 1%;
+    height: 100px;
 }
 
 .footer {
