@@ -255,15 +255,17 @@ html {
     padding-right: 10%;
 }
 
-.footer img {
-    border-right: 1px solid black;
-    padding-right: 10px;
+.footer .sponsors {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.footer img:last-child {
-    border-right: none;
+.footer .sponsor-separator {
+    width: 1px;
+    background-color: black;
+    align-self: stretch;
 }
-
 
 .footer .smallimg {
     width: 10%;
