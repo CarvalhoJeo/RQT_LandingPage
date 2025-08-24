@@ -255,25 +255,20 @@ html {
 
 .footer .sponsors {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 20px;
     margin-left: auto;
+    height: 60px;
+}
+
+.footer .sponsor-logo {
+    height: 100%;
+    width: auto;
 }
 
 .footer .sponsor-separator {
     width: 1px;
     background-color: black;
-    align-self: stretch;
-}
-
-.footer .smallimg {
-    width: 10%;
-    height: auto;
-}
-
-.footer .bigimg {
-    width: 5%;
-    height: auto;
 }
 
 
