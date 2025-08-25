@@ -23,6 +23,69 @@ html {
     font-family: leagueSpartan;
 }
 
+.image-section {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.image-section h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #004F2D;
+}
+
+.image-section .intro {
+    max-width: 760px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-family: regularGlacialIndifference;
+    font-size: 1.15em;
+}
+
+.benefit-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform .2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card .emoji {
+    font-size: 2.2rem;
+    display: block;
+}
+
+.card h3 {
+    margin: 12px 0 8px;
+    color: #004F2D;
+    font-size: 1.1rem;
+}
+
+.card p {
+    margin: 0;
+    font-size: .95rem;
+    line-height: 1.4;
+    font-family: regularGlacialIndifference;
+}
+
+.image-section .cta {
+    text-align: center;
+    margin-top: 45px;
+}
+
 #hero {
     position: relative;
     height: 100vh;
@@ -153,76 +216,74 @@ html {
     color: #F5D709;
 }
 
-.organizers-logos {
+.sponsors {
     display: flex;
-    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    height: 60px;
+}
+
+.sponsor-logo {
+    height: 100%;
+    width: auto;
+}
+
+.sponsor-separator {
+    width: 1px;
+    background-color: black;
+}
+
+.organizers-logos.sponsors {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: clamp(12px, 2vw, 24px);
     align-items: center;
-    padding: 1%;
+    justify-items: center;
+    padding: 1rem;
+    padding-bottom: 100px;
 }
 
-.organizers-logos img {
-    width: 30%;
+.organizers-logos.sponsors .sponsor-logo {
+    max-height: clamp(36px, 8vw, 72px);
+    width: auto;
     height: auto;
-    border-right: 1px solid black;
-    padding-right: 50px;
-    padding-left: 50px;
+    object-fit: contain;
 }
 
-.organizers-logos img:first-child {
-    padding-left: 0px;
-}
+.organizers-logos.sponsors .sponsor-separator {}
 
-.organizers-logos img:last-child {
-    border-right: 0px;
-    padding-right: 0px;
-}
 
 .footer {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
     padding: 1%;
-    background-color: #7A7A7A;
+    background-color: #3683b9;
     color: white;
     border-top: 1px solid black;
 }
 
 .footer p {
-    padding-right: 10%;
+    margin: 0;
 }
 
-.footer img {
-    border-right: 1px solid black;
-    padding-right: 10px;
-}
-
-.footer img:last-child {
-    border-right: none;
-}
-
-
-.footer .smallimg {
-    width: 10%;
-    height: auto;
-}
-
-.footer .bigimg {
-    width: 5%;
-    height: auto;
+.footer .sponsors {
+    margin-left: auto;
 }
 
 
 main {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: 0 auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    isolation: isolate;
+    max-width: none;
     font-family: regularGlacialIndifference;
 }
 
 main h1,
-h2,
-h3 {
+main h2,
+main h3 {
+    text-align: center;
     font-family: leagueSpartan;
 }
 
@@ -230,6 +291,12 @@ h3 {
 section {
     margin-bottom: 60px;
 }
+
+section h1 {
+    font-size: 2.3em;
+}
+
+
 
 .btn {
     display: inline-block;
@@ -242,4 +309,214 @@ section {
 
 .btn:hover {
     background-color: #9BC53D;
+}
+
+main {
+    position: relative;
+    margin: 0% 0;
+    padding: 0% 0;
+    max-width: none;
+}
+
+.content {
+    box-sizing: border-box;
+    width: min(900px, 100%);
+    margin-inline: auto;
+    padding-inline: 20px;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+    display: flow-root;
+}
+
+.page-decorations {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.corner-decoration,
+.side-decoration {
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.corner-decoration.top-left {
+    width: 165px;
+    height: 165px;
+    background-image: url(images/corner3.png);
+    background-size: 329px 329px;
+    top: 0px;
+    left: 0%;
+    rotate: 180deg;
+    background-position: left top;
+}
+
+.corner-decoration.top-right {
+    width: 165px;
+    height: 165px;
+    background-image: url(images/corner3.png);
+    background-size: 329px 329px;
+    top: 0px;
+    right: 0%;
+    rotate: 180deg;
+    background-position: right top;
+}
+
+.corner-decoration.bottom-left {
+    width: 165px;
+    height: 165px;
+    background-image: url(images/corner3.png);
+    background-size: 329px 329px;
+    bottom: 0%;
+    left: 0%;
+    rotate: 180deg;
+    background-position: left bottom;
+}
+
+.corner-decoration.bottom-right {
+    width: 165px;
+    height: 165px;
+    background-image: url(images/corner3.png);
+    background-size: 329px 329px;
+    bottom: 0px;
+    right: 0px;
+    rotate: 180deg;
+    background-position: right bottom;
+}
+
+.side-decoration {
+    width: 186px;
+    height: 373px;
+    top: 30%;
+    transform: translateY(-50%);
+    background-image: url(images/corner5.png);
+    background-size: 372px 373px;
+}
+
+.side-decoration.left {
+    left: 0%;
+    top: 15%;
+    rotate: 180deg;
+    background-position: left center;
+}
+
+.side-decoration.right {
+    right: 0%;
+    rotate: 180deg;
+    background-position: right center;
+}
+
+.edicao {
+    border-top: 2px solid #e61770;
+}
+
+
+.edicao ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.edicao li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
