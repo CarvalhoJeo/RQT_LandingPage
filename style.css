@@ -535,9 +535,19 @@ main {
         display: none;
     }
 
-    .sponsors {
+    .footer {
         flex-direction: column;
-        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer p {
+        font-size: 3.5vw;
+    }
+
+    .footer .sponsors {
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 10px;
     }
 
