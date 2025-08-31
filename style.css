@@ -536,16 +536,20 @@ main {
     }
 
     .footer {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         text-align: center;
+        gap: 10px;
     }
 
     .footer p {
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 
     .footer .sponsors {
+        margin-left: 0;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
