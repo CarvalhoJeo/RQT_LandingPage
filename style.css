@@ -258,7 +258,7 @@ html {
 .footer {
     display: flex;
     align-items: center;
-    padding: 1%;
+    padding: 2%;
     background-color: #3683b9;
     color: white;
     border-top: 1px solid black;
