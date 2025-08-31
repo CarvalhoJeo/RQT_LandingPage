@@ -218,14 +218,16 @@ html {
 
 .sponsors {
     display: flex;
-    align-items: stretch;
-    gap: 20px;
-    height: 60px;
+    align-items: center;
+    gap: clamp(12px, 2vw, 24px);
 }
 
 .sponsor-logo {
-    height: 100%;
+    height: auto;
     width: auto;
+    max-width: 100%;
+    max-height: clamp(30px, 8vw, 60px);
+    object-fit: contain;
 }
 
 .sponsor-separator {
@@ -256,7 +258,7 @@ html {
 .footer {
     display: flex;
     align-items: center;
-    padding: 1%;
+    padding: 2%;
     background-color: #3683b9;
     color: white;
     border-top: 1px solid black;
@@ -518,5 +520,42 @@ main {
 
     to {
         opacity: 1
+    }
+}
+
+@media (max-width: 600px) {
+    #hero .hero-navigation ul {
+        flex-direction: column;
+        align-items: center;
+        font-size: 4.5vw;
+        gap: 10px;
+    }
+
+    #hero .hero-navigation li::after {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer p {
+        font-size: 3vw;
+    }
+
+    .footer .sponsors {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .page-decorations {
+        display: none;
     }
 }
