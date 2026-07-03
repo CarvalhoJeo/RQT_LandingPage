@@ -410,6 +410,32 @@ main {
     background-position: right center;
 }
 
+.edicao-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.edicao-tab {
+    padding: 10px 28px;
+    font-family: leagueSpartan;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: 2px solid #e61770;
+    background: transparent;
+    color: #e61770;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.edicao-tab.active,
+.edicao-tab:hover {
+    background: #e61770;
+    color: #fff;
+}
+
 .edicao {
     border-top: 2px solid #e61770;
 }
