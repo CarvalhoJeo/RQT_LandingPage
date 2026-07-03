@@ -313,6 +313,23 @@ section h1 {
     background-color: #9BC53D;
 }
 
+.btn_zap {
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 28px;
+    background-color: #009C3B;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.btn_zap:hover {
+    background-color: #9BC53D;
+}
+
 main {
     position: relative;
     margin: 0% 0;
