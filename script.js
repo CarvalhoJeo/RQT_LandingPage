@@ -52,7 +52,11 @@ links.forEach(link => {
 });
 
 let slideIndex = 1;
-showSlides(slideIndex);
+let activePanel = document.querySelector('.edicao-panel:not([style*="display: none"])');
+
+if (activePanel && activePanel.querySelectorAll('.mySlides').length > 0) {
+    showSlides(slideIndex);
+}
 
 // Next/previous controls
 function plusSlides(n) {
@@ -65,17 +69,34 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
+    activePanel = document.querySelector('.edicao-panel:not([style*="display: none"])');
+    if (!activePanel) return;
+
+    let slides = activePanel.querySelectorAll('.mySlides');
+    let dots = activePanel.querySelectorAll('.dot');
+    if (slides.length === 0) return;
+
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+
+    slides.forEach(s => s.style.display = 'none');
+    dots.forEach(d => d.classList.remove('active'));
+
+    slides[slideIndex - 1].style.display = 'block';
+    dots[slideIndex - 1].classList.add('active');
+}
+
+// Edition tabs
+function showEdicao(year) {
+    const panels = document.querySelectorAll('.edicao-panel');
+    const tabs = document.querySelectorAll('.edicao-tab');
+
+    panels.forEach(panel => panel.style.display = 'none');
+    tabs.forEach(tab => tab.classList.remove('active'));
+
+    document.getElementById('edicao-' + year).style.display = 'block';
+    event.currentTarget.classList.add('active');
+
+    slideIndex = 1;
+    showSlides(slideIndex);
 }

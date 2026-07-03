@@ -43,30 +43,102 @@
                 <h1>Edições Passadas</h1>
                 <p style="text-align: center;">Confira as edições anteriores do evento!</p>
 
-                <div class="edicao">
+                <div class="edicao-tabs">
+                    <button class="edicao-tab active" onclick="showEdicao('2025')">2025</button>
+                    <button class="edicao-tab" onclick="showEdicao('2024')">2024</button>
+                </div>
+
+                <div class="edicao edicao-panel" id="edicao-2025">
+                    <h2>Edição 2025</h2>
+                                        <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="images/2025/IMG_7612.jpeg" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="images/2025/IMG_7623.jpeg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="images/2025/IMG_7679.jpeg"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="images/2025/IMG_7868.jpeg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="images/2024/IMG_8088.jpeg" style="width:100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                    <p>A segunda edição do <strong>Robôs Que Transformam</strong> aconteceu em <strong>outubro de
+                            2025</strong>,
+                        reunindo <strong>17 equipes de 12 escolas públicas</strong> da rede municipal de <strong>Novo
+                            Hamburgo</strong>.
+                        Ao todo, mais de <strong>110 estudantes</strong> participaram da iniciativa.</p>
+                    <p>Nesta edição, os participantes foram desafiados a olhar para a cidade de Novo Hamburgo e
+                        identificar oportunidades de melhoria para a comunidade. A partir dessa temática, as equipes
+                        desenvolveram projetos de robótica e inovação voltados para desafios urbanos, exercitando a
+                        criatividade, o pensamento crítico e a capacidade de transformar ideias em soluções com impacto
+                        social.</p>
+                    <p><strong>Escolas e equipes participantes:</strong></p>
+                    <ul>
+                        <li><strong>EMEB Anita Garibaldi</strong></li>
+                        <li><strong>EMEB Francisca Saile</strong></li>
+                        <li><strong>EMEB Ver. João Brizolla</strong> – 2 Equipes</li>
+                        <li><strong>EMEB Pres. Nilo Peçanha</strong></li>
+                        <li><strong>EMEB Monteiro Lobato</strong></li>
+                        <li><strong>EMEB Martha Wartenberg</strong> – 2 Equipes</li>
+                        <li><strong>EMEB Pres. Prudente de Moraes</strong> – 2 Equipes</li>
+                        <li><strong>EMEB Samuel Dietschi</strong> – 2 Equipes</li>
+                        <li><strong>EMEB Arnaldo Grin</strong> – 2 Equipes</li>
+                        <li><strong>EMEB Getúlio Dornelles Vargas</strong></li>
+                        <li><strong>EMEB Harry Roth</strong></li>
+                    </ul>
+                    <p>A edição de 2025 consolidou o crescimento do projeto, ampliando o número de escolas e estudantes
+                        envolvidos. Mais do que desenvolver soluções tecnológicas, os participantes foram incentivados a
+                        compreender os desafios da cidade e a utilizar a robótica como ferramenta de transformação,
+                        cidadania e impacto positivo na comunidade.</p>
+                </div>
+
+                <div class="edicao edicao-panel" id="edicao-2024" style="display: none;">
                     <h2>Edição 2024</h2>
                     <div class="slideshow-container">
                         <div class="mySlides fade">
-                            <div class="numbertext">1 / 6</div>
+                            <div class="numbertext">1 / 5</div>
                             <img src="images/2024/IMG_7942.jpeg" style="width:100%">
                         </div>
                         <div class="mySlides fade">
-                            <div class="numbertext">2 / 6</div>
+                            <div class="numbertext">2 / 5</div>
                             <img src="images/2024/IMG_7943.jpeg" style="width:100%">
                         </div>
 
                         <div class="mySlides fade">
-                            <div class="numbertext">3 / 6</div>
+                            <div class="numbertext">3 / 5</div>
                             <img src="images/2024/IMG_7944.jpeg"
                                 style="width:50%; display: block; margin-left: auto; margin-right: auto;">
                         </div>
                         <div class="mySlides fade">
-                            <div class="numbertext">4 / 6</div>
+                            <div class="numbertext">4 / 5</div>
                             <img src="images/2024/IMG_7946.jpeg" style="width:100%">
                         </div>
 
                         <div class="mySlides fade">
-                            <div class="numbertext">5 / 6</div>
+                            <div class="numbertext">5 / 5</div>
                             <img src="images/2024/IMG_8015.jpeg" style="width:100%">
                         </div>
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -79,7 +151,6 @@
                         <span class="dot" onclick="currentSlide(3)"></span>
                         <span class="dot" onclick="currentSlide(4)"></span>
                         <span class="dot" onclick="currentSlide(5)"></span>
-                        <span class="dot" onclick="currentSlide(6)"></span>
                     </div>
                     <p>A primeira edição do <strong>Robôs Que Transformam</strong> aconteceu em <strong>novembro de
                             2024</strong>,
@@ -104,7 +175,6 @@
                         resultado vai muito além de construir robôs: é sobre transformar ideias em ações e fortalecer o
                         vínculo
                         com a comunidade.</p>
-                    <p>Foi apenas o começo. Em 2025, o desafio está ainda maior, e as possibilidades também.</p>
                 </div>
             </section>
         </div>
